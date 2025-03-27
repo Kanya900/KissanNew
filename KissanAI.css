@@ -1,0 +1,88 @@
+:root {
+    --primary-green: #4CAF50;
+    --secondary-green: #81C784;
+    --background-light: #f0f4f0;
+    --white: #ffffff;
+    --text-color: #333;
+  }
+  
+  .kissan-ai-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .app-header {
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .chatbot-section {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .language-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .language-dropdown {
+    padding: 8px;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+  }
+  
+  .query-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .query-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+  }
+  
+  .query-button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .query-button:hover {
+    background-color: var(--secondary-green);
+  }
+  
+  .response-container {
+    background-color: var(--background-light);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    .query-input-container {
+      flex-direction: column;
+    }
+  }
